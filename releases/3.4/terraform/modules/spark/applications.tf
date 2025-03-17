@@ -53,11 +53,11 @@ resource "juju_application" "kyuubi_users" {
   charm {
     name     = "postgresql-k8s"
     channel  = "14/stable"
-    revision = 281
+    revision = 495
   }
 
   resources = {
-    postgresql-image = 159
+    postgresql-image = 168
   }
 
   units = 1
@@ -73,11 +73,11 @@ resource "juju_application" "metastore" {
   charm {
     name     = "postgresql-k8s"
     channel  = "14/stable"
-    revision = 281
+    revision = 495
   }
 
   resources = {
-    postgresql-image = 159
+    postgresql-image = 168
   }
 
   units = 1
